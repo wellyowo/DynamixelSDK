@@ -1,0 +1,8 @@
+<launch>
+
+    <!-- Launch the first instance of read_write_node -->
+    <node name="read_write_node" pkg="dynamixel_sdk_examples" type="sync_read_write_node" output="screen">
+    </node>
+    <node name="contorl_motor" pkg="dynamixel_sdk_examples" type="open_close_service.py" output="screen">
+    </node>
+</launch>
